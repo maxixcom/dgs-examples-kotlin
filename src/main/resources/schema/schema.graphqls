@@ -31,7 +31,7 @@ type Review {
 
 input SubmittedReview {
     showId: Int!
-    username: String! @resetOnValue(value: "xxxx")
+    username: String @resetOnValue(value: "xxx")
     starScore: Int!
 }
 

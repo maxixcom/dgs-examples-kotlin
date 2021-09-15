@@ -32,7 +32,7 @@ class ResetValueDirective : SchemaDirectiveWiring {
         // (!) The lambda is called on start only
         return field.transform { builder: GraphQLInputObjectField.Builder ->
             builder
-                .defaultValue("It's new value ${LocalDateTime.now()}")
+                .defaultValue("Guest-${LocalDateTime.now()}")
                 .build()
         }
     }
