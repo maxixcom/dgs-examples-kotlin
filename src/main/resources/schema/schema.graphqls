@@ -31,7 +31,7 @@ type Review {
 
 input SubmittedReview {
     showId: Int!
-    username: String!
+    username: String! @resetOnValue(value: "xxxx")
     starScore: Int!
 }
 
@@ -42,3 +42,4 @@ type Image {
 scalar DateTime
 scalar Upload
 directive @skipcodegen on FIELD_DEFINITION
+directive @resetOnValue(value: String!) on INPUT_FIELD_DEFINITION
